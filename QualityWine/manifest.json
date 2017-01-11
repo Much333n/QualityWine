@@ -1,0 +1,13 @@
+{
+   "Name": "QualityWine",
+   "Author": "Much333n",
+   "Version": {
+      "MajorVersion": 0,
+      "MinorVersion": 0,
+      "PatchVersion": 1,
+      "Build": ""
+   },
+   "Description": "Turn quality crops directly into quality wine",
+   "UniqueID": "QualWine",
+   "EntryDll": "QualityWine.dll"
+}
