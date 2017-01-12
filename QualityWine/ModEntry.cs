@@ -54,12 +54,13 @@ namespace QualityWine
             // get the target keg
             Vector2 toolPos = Game1.player.GetToolLocation();
             Object keg = Game1.currentLocation.getObjectAt((int)toolPos.X, (int)toolPos.Y) as Object;
-            if (keg == null || keg.Name != "Keg" || keg.heldObject == null)
+            if (keg == null || keg.heldObject == null)
                 return;
 
             // transfer quality
-            if (keg.heldObject.quality == Object.lowQuality)
-                keg.heldObject.quality = item.quality;
+            if (keg.Name == "Keg" || keg.Name == "Preserves Jar")
+                    if (keg.heldObject.quality == Object.lowQuality)
+                        keg.heldObject.quality = item.quality;
         }
     }
 }
